@@ -40,7 +40,7 @@ Eigenvalues and eigenvectors help analyze and simplify high-dimensional data by 
 PCA uses eigenvectors of the covariance matrix to identify directions of maximum variance in data:
 - Eigenvectors define principal components.
 - Eigenvalues quantify the variance explained by each component.
-- **Example**: Reducing a 1000-dimensional image dataset to 50 dimensions while retaining 95% of the variance.
+- **Example**: Reducing a 1000-dimensional image dataset to 50 dimensions while retaining 95\% of the variance.
 
 ### 2. Graph-Based Learning: Spectral Clustering
 Spectral clustering leverages eigenvectors of the graph Laplacian matrix to partition data into clusters:
@@ -68,17 +68,17 @@ eigenvalues, eigenvectors = np.linalg.eig(A)
 print("Eigenvalues:", eigenvalues)
 print("Eigenvectors:\n", eigenvectors)
 
-# Verify Av = \u03bbv for the first eigenvector
+# Verify Av = λv for the first eigenvector
 v = eigenvectors[:, 0]  # First eigenvector
 lambda_val = eigenvalues[0]  # Corresponding eigenvalue
 
-# Compute Av and \u03bbv
+# Compute Av and λv
 Av = A @ v
 lambda_v = lambda_val * v
 
 # Display results
 print("\nA @ v:", np.round(Av, 2))
-print("\u03bb * v:", np.round(lambda_v, 2))
+print("λ * v:", np.round(lambda_v, 2))
 ```
 
 ---
