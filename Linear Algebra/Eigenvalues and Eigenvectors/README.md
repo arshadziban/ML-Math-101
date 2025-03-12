@@ -58,8 +58,9 @@ Eigenvalue decomposition helps analyze weight matrices in neural networks:
 ```python
 import numpy as np
 
-# Sample matrix
-A = np.array([[4, 2], [1, 3]])
+# Define a square matrix A
+A = np.array([[4, 2], 
+              [1, 3]])
 
 # Compute eigenvalues and eigenvectors
 eigenvalues, eigenvectors = np.linalg.eig(A)
@@ -67,8 +68,22 @@ eigenvalues, eigenvectors = np.linalg.eig(A)
 print("Eigenvalues:", eigenvalues)
 print("Eigenvectors:\n", eigenvectors)
 
-# Verify Av = λv for the first eigenvector
-v = eigenvectors[:, 0]
-lambda_val = eigenvalues[0]
-print("\nA @ v:", np.round(A @ v, 2))
-print("λ * v:", np.round(lambda_val * v, 2))
+# Verify Av = \u03bbv for the first eigenvector
+v = eigenvectors[:, 0]  # First eigenvector
+lambda_val = eigenvalues[0]  # Corresponding eigenvalue
+
+# Compute Av and \u03bbv
+Av = A @ v
+lambda_v = lambda_val * v
+
+# Display results
+print("\nA @ v:", np.round(Av, 2))
+print("\u03bb * v:", np.round(lambda_v, 2))
+```
+
+---
+
+## References
+- Strang, G. (2016). *Introduction to Linear Algebra*. Wellesley-Cambridge Press.
+- Hastie, T., Tibshirani, R., & Friedman, J. (2009). *The Elements of Statistical Learning*.
+- Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press.
