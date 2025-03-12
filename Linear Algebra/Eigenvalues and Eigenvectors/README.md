@@ -17,10 +17,7 @@ Eigenvalues and eigenvectors are foundational concepts in linear algebra with cr
 ---
 
 ## Definition
-For a square matrix \( A \in \mathbb{R}^{n \times n} \), an eigenvector \( v \) and its corresponding eigenvalue \( \lambda \) satisfy:
-\[
-A v = \lambda v
-\]
+
 - **Eigenvalue (\( \lambda \))**: Scalar representing the scaling factor applied to the eigenvector.
 - **Eigenvector (\( v \))**: Non-zero vector that only changes by a scalar factor (its direction remains unchanged) under the linear transformation defined by \( A \).
 
@@ -68,17 +65,17 @@ eigenvalues, eigenvectors = np.linalg.eig(A)
 print("Eigenvalues:", eigenvalues)
 print("Eigenvectors:\n", eigenvectors)
 
-# Verify Av = λv for the first eigenvector
+# Verify Av = \u03bbv for the first eigenvector
 v = eigenvectors[:, 0]  # First eigenvector
 lambda_val = eigenvalues[0]  # Corresponding eigenvalue
 
-# Compute Av and λv
+# Compute Av and \u03bbv
 Av = A @ v
 lambda_v = lambda_val * v
 
 # Display results
 print("\nA @ v:", np.round(Av, 2))
-print("λ * v:", np.round(lambda_v, 2))
+print("\u03bb * v:", np.round(lambda_v, 2))
 ```
 
 ---
