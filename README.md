@@ -5,10 +5,6 @@ MLMath101 is a collection of Python, R, and Julia code covering essential mathem
 
 ## 📚 Topics Covered
 - **Linear Algebra** (Vectors, Matrices, Eigenvalues, Singular Value Decomposition)
-- **Calculus** (Derivatives, Integrals, Optimization Techniques)
-- **Probability & Statistics** (Distributions, Bayes’ Theorem, Hypothesis Testing)
-- **Numerical Methods** (Gradient Descent, Newton’s Method, Optimization Algorithms)
-- **Other ML-relevant Math**
 
 ## 🛠️ Technologies Used
 - **Python** (NumPy, SciPy, SymPy, Matplotlib)
