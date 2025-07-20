@@ -9,5 +9,3 @@ MLMath101 is a collection of Python, R, and Julia code covering essential mathem
 
 ## 🛠️ Technologies Used
 - **Python** (NumPy, SciPy, SymPy, Matplotlib)
-- **R** (ggplot2, dplyr, Matrix)
-- **Julia** (LinearAlgebra, Statistics, Plots)
